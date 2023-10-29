@@ -99,29 +99,6 @@ async function executeSearch() {
       contentDiv.appendChild(date);
       contentDiv.appendChild(description);
 
-      const transcribeButton = document.createElement("button");
-      transcribeButton.textContent = "Transcribe";
-      transcribeButton.classList.add("mt-2", "bg-black", "text-white", "px-3", "py-2", "rounded");
-      transcribeButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        const existingTranscribeMessage = contentDiv.querySelector(".transcribe-message");
-        if (!existingTranscribeMessage) {
-          const transcribeMessage = document.createElement("p");
-
-          // Set the transcribe message text content based on the user's default language
-          const userLang = navigator.language || navigator.userLanguage;
-          if (userLang.startsWith("zh")) {
-            transcribeMessage.textContent = "(如果将来有钱租GPU)会用Whisper转录全文+时间轴🤔";
-          } else {
-            transcribeMessage.textContent = "Will add Whisper to transcribe full text(if can rent GPU🤔)";
-          }
-
-          transcribeMessage.classList.add("text-sm", "mt-2", "transcribe-message");
-          contentDiv.appendChild(transcribeMessage);
-        }
-      });
-      contentDiv.appendChild(transcribeButton);
-
       episodeDiv.appendChild(coverImage);
       episodeDiv.appendChild(contentDiv);
 
