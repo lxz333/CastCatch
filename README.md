@@ -28,7 +28,8 @@ To get started with CastCatch:
 
 ![AAFE885A-25D2-42F0-8D57-33779A123813](https://github.com/lxz333/CastCatch/assets/104611360/2a557fa2-9290-44e3-bedd-918fe919d142)
 
-![5366F6D2-F683-4E5A-80C3-6FBEA9D29DBB_1_105_c](https://github.com/lxz333/CastCatch/assets/104611360/585e9e6f-aead-4770-bda5-833ff13530e2)
+
+![9516669D-59DC-4720-BF8D-5E84030F5516](https://github.com/lxz333/CastCatch/assets/104611360/05b73a93-ac27-407e-9716-d87c2dd76908)
 
 
 ## Dive into Trending Topics
