@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castcatch</title>
+    <link href="static/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" type="image/png" href="static/favicon.png" />
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCP42KYKK7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QCP42KYKK7');
+    </script>
+
+    <script src="static/search.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center flex-col">
+    <!-- social icons container -->
+    <div class="fixed top-4 right-4">
+        <a href="https://github.com/mazzzystar/PodFind/" target="_blank" class="text-gray-600 hover:text-gray-800 mx-2">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 max-w-2xl">
+        <a href="/" class="text-2xl md:text-4xl font-bold text-center mt-8 block">
+            <h1> What do podcasters say...</h1>
+        </a>
+        <div class="overflow-hidden h-10 mb-4 text-center mt-4">
+          <div class="scrollText">
+                <p class="inline h-8 bg-blue-200 cursor-pointer mx-2" onclick="setFancySentence(event)">Israel-Palestine conflict</p>
+                <p class="inline h-8 bg-purple-100 cursor-pointer mx-2" onclick="setFancySentence(event)">GPT-4</p>
+                <p class="inline h-8 bg-yellow-200 cursor-pointer mx-2" onclick="setFancySentence(event)">Elon Musk</p>
+                <p class="inline h-8 bg-red-200 cursor-pointer mx-2" onclick="setFancySentence(event)">Bitcoin</p>
+                <p class="inline h-8 bg-gray-100 cursor-pointer mx-2" onclick="setFancySentence(event)">AI</p>
+            </div>
+        </div>
+        <form action="#" method="POST" class="bg-gray-800 shadow-lg rounded px-8 pt-6 pb-8 mb-4" onsubmit="event.preventDefault(); executeSearch()">
+            <div class="mb-4">
+                <div class="flex items-center border-b border-b-2 border-purple-300 py-2">
+                    <input type="text" name="search" id="search" placeholder="Trending keywords..." class="appearance-none bg-transparent border-none w-full text-gray-300 mr-3 py-1 px-2 leading-tight focus:outline-none text-xl">
+                    <button type="submit" id="searchButton" class="inline-flex items-center px-4 py-2 border rounded text-gray-800 bg-white border-white hover:bg-gray-300 hover:border-gray-300">
+                        <span id="searchButtonText">Search</span>
+                        <span id="searchButtonProgress" class="hidden">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <div id="filterContainer" class="mb-4 hidden">
+                    <label for="filterTimestamps" class="inline-flex items-center text-white">
+                        <span class="mr-2" id="timestampsOnlyText">Timestamps only</span>
+                        <div class="relative">
+                            <input type="checkbox" id="filterTimestamps" class="sr-only" />
+                            <div class="w-10 h-4 bg-purple-300 rounded-full shadow-inner"></div>
+                            <div class="toggle-dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="searchResults" class="mt-4"></div>
+        </form>
+
+    </div>
+
+    <button id="scrollToTop" class="fixed bottom-4 right-4 cursor-pointer opacity-50 hover:opacity-100 focus:outline-none" onclick="scrollToTop()">&uarr;</button>
+
+</body>
+</html>
