@@ -24,6 +24,13 @@ To get started with CastCatch:
 5. Instantly receive a curated list of podcast excerpts with timestamps and summaries.
 6. Dive deeper by clicking on the provided links to listen to the full conversation.
 
+## Screenshots of UI
+
+![AAFE885A-25D2-42F0-8D57-33779A123813](https://github.com/lxz333/CastCatch/assets/104611360/2a557fa2-9290-44e3-bedd-918fe919d142)
+
+![5366F6D2-F683-4E5A-80C3-6FBEA9D29DBB_1_105_c](https://github.com/lxz333/CastCatch/assets/104611360/585e9e6f-aead-4770-bda5-833ff13530e2)
+
+
 ## Dive into Trending Topics
 
 With CastCatch, stay informed, get various viewpoints, and broaden your understanding of the topics that matter most to you. Begin your journey into the heart of podcasting today and see where the conversation takes you.
